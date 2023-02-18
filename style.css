@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #eff3fa7c;     
+}
+
+.account-card {
+    width: 80%;
+    background: rgba(2, 64, 252, 0.5);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgb(0 0 0 / 20%);
+    border-radius: 30px;
+}
+
+.btn-primary {
+    background: rgba(2, 64, 252, 0.5);    
+}
+
+.elist-item {
+    list-style: none;
+    background: rgba(2, 64, 252, 0.5);
+    border-radius: 5px; 
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width: 320px) and (max-width: 769px) {
+    .d-flex-sm {
+        flex-direction: column !important;
+    }
+
+    .w-50,
+    .account-card,
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .mb-sm-5 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .p-sm-5 {
+        padding: 1rem !important;
+    }
+
+    .w-25-sm {
+        width: 50% !important;
+    }
+
+    .mt-4-sm {
+        margin-top: 2rem !important;
+    }
+}

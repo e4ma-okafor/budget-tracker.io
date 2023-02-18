@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget Tracker</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="w-50 my-5">
+                <div>
+                    <h1>Welcome Buddy!</h1>
+                    <p>Track your Monthly budget here</p>
+                </div>                                 
+            </div>
+            <div class="d-flex d-flex-sm">
+                <div class="d-flex flex-column justify-content-center align-content-center w-50">
+                    <div class="p-5 p-sm-5 account-card text-white d-flex flex-column justify-content-between">
+                        <div class="text-center mb-5 mb-sm-5">
+                            <h4>Total Balance</h4>
+                            <p id="totalBalance" class=""></p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex" style="font-size: 20px;">
+                                <span style="color: rgb(38, 255, 4);"><i class="bi bi-arrow-up-circle"></i></span>
+                                <div class="ms-2">
+                                    <p>Income</p>
+                                    <p id="income" class="">20000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex" style="font-size: 20px;">
+                                <span style="color: red;"><i class="bi bi-arrow-down-circle"></i></span>
+                                <div class="ms-2">
+                                    <p>Expenses</p>
+                                    <p id="expenses" class="">0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <input type="tel" class="form-control mb-3 w-50" id="addBudget" placeholder="Add to Budget"> 
+                        <button class="btn btn-primary w-25 w-25-sm" type="button" id="button">Add to Budget</button>                       
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-between w-50">                    
+                    <div class="w-75 text-center">
+                        <h3 class="mb-5 mb-sm-5 mt-4-sm">Add Expenses</h3>
+                        <input type="tel" class="form-control mb-3" id="addExpenses" placeholder="$ 0">
+                        <input type="text" class="form-control mb-3" id="description" placeholder="Enter Description">
+                        <button class="mt-4 btn btn-primary w-50 w-25-sm" id="addBtn" type="button">ADD</button>
+                    </div>
+                    <div class="mt-4 transactions w-75">
+                        <div class="w-100">
+                            <h3 class="mb-3">My Expenses</h3>                            
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <ul class="w-100" id="expensesList">
+
+                            </ul>                            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
