@@ -10,8 +10,8 @@ var b = parseInt(expenses.innerHTML);
 
 function addToBalance() {
     var accBalance = a - b;
-    balance.innerHTML = accBalance;    
-}
+    balance.innerHTML = accBalance;   
+} 
 addToBalance();
 
 function addToBudget() {
