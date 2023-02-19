@@ -10,7 +10,7 @@ var b = parseInt(expenses.innerHTML);
 
 function addToBalance() {
     var accBalance = a - b;
-    balance.innerHTML = parseInt(accBalance);
+    balance.innerHTML = accBalance;    
 }
 addToBalance();
 
@@ -20,7 +20,7 @@ function addToBudget() {
     console.log(x);
     
     console.log(a);
-    a += x;    
+    a = x;    
     income.innerHTML = a; 
     return addToBalance();
 }
@@ -42,15 +42,15 @@ function addToExpenses() {
     /*let list = `<li class="p-4 d-flex justify-content-between" style="list-style: none; background: rgba(2, 64, 252, 0.5);
     border-radius: 5px; color: #fff"><span>${description}</span> - <span>${b}</span></li>`;
       */    
-let expenseArr = [];
-expenseArr.push(description);
+    let expenseArr = [];
+    expenseArr.push(description);
 
-expenseArr.forEach(function(item) {
-    let li = document.createElement("li");    
-    li.innerHTML = `<span>${item}</span><span>${exp}</span>`;
-    li.classList.add("elist-item");
-    expensesList.appendChild(li);    
-})       
+    expenseArr.forEach(function(item) {
+        let li = document.createElement("li");    
+        li.innerHTML = `<span>${item}</span><span>${exp}</span>`;
+        li.classList.add("elist-item");
+        expensesList.appendChild(li);    
+    })       
     return addToBalance();
 }
 addBtn.addEventListener("click", addToExpenses);
