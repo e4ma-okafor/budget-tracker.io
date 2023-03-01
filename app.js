@@ -8,13 +8,14 @@ const addBtn = document.getElementById('addBtn');
 var a = parseInt(income.innerHTML);
 var b = parseInt(expenses.innerHTML);
 
-function addToBalance() {
+function addToBalance() {      
     var accBalance = a - b;
-    balance.innerHTML = accBalance;   
+    balance.innerHTML = accBalance;      
 } 
 addToBalance();
 
 function addToBudget() {
+    balance.classList.remove('hide');     
     let addBudget = document.getElementById('addBudget').value;    
     x = parseInt(addBudget);    
     console.log(x);
@@ -26,7 +27,8 @@ function addToBudget() {
 }
 btn.addEventListener("click", addToBudget);
 
-function addToExpenses() {  
+function addToExpenses() { 
+    expenses.classList.remove('hide');  
     let addExpense = document.getElementById('addExpenses').value;
     let description = document.getElementById('description').value;
     let expensesList = document.getElementById('expensesList');
