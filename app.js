@@ -23,6 +23,7 @@ function addToBudget() {
     console.log(a);
     a = x;    
     income.innerHTML = a; 
+    document.getElementById('addBudget').value = '';
     return addToBalance();
 }
 btn.addEventListener("click", addToBudget);
@@ -52,7 +53,9 @@ function addToExpenses() {
         li.innerHTML = `<span>${item}</span><span>${exp}</span>`;
         li.classList.add("elist-item");
         expensesList.appendChild(li);    
-    })       
+    }) 
+    document.getElementById('addExpenses').value = ''; 
+    document.getElementById('description').value = '';     
     return addToBalance();
 }
 addBtn.addEventListener("click", addToExpenses);
